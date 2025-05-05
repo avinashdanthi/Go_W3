@@ -29,3 +29,7 @@ c. Functions
 d. Statements and expressions
 
 # Go Variable Types
+
+int, float_thirty_two, string, bool
+In Go there are two ways to declare a variable:
+1.with var keyword var variablename type = value 2. With the := sign variablename := value

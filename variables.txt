@@ -1,0 +1,47 @@
+package main
+
+import "fmt"
+
+// Variable declaration with initial value
+/*func main(){
+	var student1 string = "Avinash" //type is string "can be declared both inside and outside of functions"
+	var student2 = "Danthi" //type is inferred which means the compiler decides the type of the variable, based on the value.
+	x:=2 // type is inferred and can only be used inside functions
+
+	fmt.Println("Student1:",student1)
+	fmt.Println("Student2:",student2)
+	fmt.Println("Value of x is ",x)
+}*/
+
+// Variable declaration without initial value
+// In Go, all variables are initialized. So, if you declare a variable without an initial value.
+// its value will be set to the default value of its type.
+
+/*func main(){
+	var a int
+	var b string
+	var c bool
+
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+}*/
+
+// value assignment after declaration
+/*func main(){
+	var student string
+	student = "Avinash Danthi"
+	fmt.Println("student:", student)
+}*/
+
+// Declaring of variables outside of a function
+var a int
+var b int = 2
+var c = 3
+
+func main(){
+	a = 1
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+}

@@ -40,3 +40,24 @@ The const keyword declares the variable as "constant", which means that it is un
 const CONSTNAME type = value
 Constants follow the same naming convention as variables
 Constants are of two types "typed" eg: const A int = 1 amd "untyped" eg: const A = 1
+
+# Go Output functions
+
+1. Print("Prints the raw format") 2. Println("Same as prinf but adds a new line at the end") 3.Printf("It formats its argument based on the given formatting verb")
+   General Formatting verbs:
+   %v - Prints the value in default format
+   %#v - Prints the value in Go syntax format
+   %T - Prints the type of the value
+   %% - Prints the % sign
+
+# Go Arrays
+
+Arrays are used to store multiple values of the same type in a single variable, instead of declaring separate variables for each value.
+In Go there are two types of array declaration:
+1.With the var keyword
+var array_name = [length]datatype{values} // here length is defined
+or
+var array_name = [...]datatype{values} // here length is inferred 2. With the := sign
+array_name := [length]datarype{values} // here the length is defined
+or
+array_name := [...]datatype{values} // here length is inferred

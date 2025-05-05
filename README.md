@@ -33,3 +33,10 @@ d. Statements and expressions
 int, float_thirty_two, string, bool
 In Go there are two ways to declare a variable:
 1.with var keyword var variablename type = value 2. With the := sign variablename := value
+
+# Go Constants
+
+The const keyword declares the variable as "constant", which means that it is unchangeable and read only.
+const CONSTNAME type = value
+Constants follow the same naming convention as variables
+Constants are of two types "typed" eg: const A int = 1 amd "untyped" eg: const A = 1

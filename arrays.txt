@@ -1,0 +1,42 @@
+package main
+
+import "fmt"
+
+//Arrays with declared lengths
+/*func main(){
+		var arr1 = [3]int{1,2,3}
+		arr2 := [5]int{4,5,6,7,8}
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+}*/
+
+//Arrays with inferred lengths
+/*func main(){
+	var arr1 = [...]int{1,2,3}
+	arr2 := [...]int{6,7,8,9,10}
+
+	fmt.Println(arr1)
+	fmt.Println(arr2)
+}*/
+
+//Arrays of strings
+func main(){
+	var arr_str = [4]string{"vovlo","ford","BMW","Mazda"}
+	//eg of accessing 1st and 3rd element 
+	fmt.Println(arr_str[0],"\n",arr_str[2])
+	//change the value of 3rd element of the array
+	arr_str[2] = "TATA MOTORS"
+	fmt.Println(arr_str)
+	// Array initialization
+	arr1 := [3]int{} // not initialized
+	arr2 := [5]int{1,2} // partially initialized
+	arr3 := [5]int{1,2,3,5,4} // fully initialized
+
+	fmt.Println(arr1);fmt.Println(arr2);fmt.Println(arr3)
+
+	// Initialize only specific elements
+	arr4 := [5]int{1:10,2:40}
+	fmt.Println(arr4)
+	// length of the arrays
+	fmt.Println(len(arr1));fmt.Println(len(arr2));fmt.Println(len(arr3));fmt.Println(len(arr4))
+}

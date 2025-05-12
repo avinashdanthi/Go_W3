@@ -61,3 +61,34 @@ var array_name = [...]datatype{values} // here length is inferred 2. With the :=
 array_name := [length]datarype{values} // here the length is defined
 or
 array_name := [...]datatype{values} // here length is inferred
+
+# Go Slices
+
+Slices are similar to arrays, but more powerful and flexible
+Like arrays, slices are also used to store multiple values of the same type in a single variable.
+However, unlike arrays, the length of a slice can grow and shrink as you see it.
+In Go, there are several ways to create a slice:
+
+1.  Using the []datatype{values}format
+    2.Create slice from an array
+    3.Using the make() function
+
+mySlice=[]int // empty slice of 0 length and o capacity
+mySlice=[]int{1,2,3} // slice of integers of length 3 and also the capacity of 3
+
+In Go, there are two functions that can be used to return the length and capacity of a slice:
+len() function: returns the length of the slice(the number of elements in the slice)
+cap() function: returns the capacity of slice(the number of elements the slice can grow or shrink to)
+
+Create a slice from an array:You create a slice by slicing an array:
+var myarray = [length]datatype{values} // an array
+mySlice := myarray[start:end] // A slice made from the array
+
+Create a slice with the make() function
+slice_name := make([]type,length,capacity)
+Note : If the capacity parameter is not defined, it will be equal to length.
+
+Modify slice : Access,Change,Append,Copy
+slice_name[index] // Access
+slice_name[index] = element
+slice_name = append(slice_name, element1, element2,....)
